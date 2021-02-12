@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Morpion</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="playerName">
+    <h1 id="titre" class="text-center">Bienvenue sur le jeu du Morpion !</h1>
+    <label for="player1">Joueur 1: </label>
+    <input id="player1" type="text" placeholder="Votre nom"><br>
+    <label for="player2">Joueur 2: </label>
+    <input id="player2" type="text" placeholder="Votre nom"><br>
+    <input id="saveName" onclick="saveName()" type="button" class="btn btn-info" value="Valider">
+</div>
+<div id="tour"><h3 class="text-center" id="player">A votre tour joueur 1</h3></div>
+
+<div class="row" id="game">
+    <div class="col text-center ">
+        <div>
+            <button class="btn btn-secondary " onclick="play(event)"></button>
+            <button class="btn btn-secondary" onclick="play(event)"></button>
+            <button class="btn btn-secondary" onclick="play(event)"></button>
+        </div>
+        <div>
+            <button class="btn btn-secondary" onclick="play(event)"></button>
+            <button class="btn btn-secondary" onclick="play(event)"></button>
+            <button class="btn btn-secondary" onclick="play(event)"></button>
+        </div>
+        <div>
+            <button class="btn btn-secondary" onclick="play(event)"></button>
+            <button class="btn btn-secondary" onclick="play(event)"></button>
+            <button class="btn btn-secondary" onclick="play(event)"></button>
+        </div>
+        <div id="scoreJ1"><p></p></div>
+        <div id="scoreJ2"><p></p></div>
+        <input id="eraseScore" onclick="eraseScore()" type="button" class="btn btn-info" value="Réinitialiser le score">
+    </div>
+</div>
+
+
+<p id="win"></p>
+<script src="morpion.js"></script>
+</body>
+</html>
