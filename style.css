@@ -1,0 +1,32 @@
+
+.btn-secondary{
+
+    width: 100px;
+    height: 100px;
+    margin-top: 4px;
+    border-radius: 0px;
+}
+
+#tour{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+.symbol{
+    font-size: 80px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+#playerName{
+    margin: 10px;
+
+}
+
+#titre{
+    margin-bottom: 30px;
+}
+#saveName{
+    margin-left: 175px;
+}
+
